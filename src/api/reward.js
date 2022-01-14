@@ -6,7 +6,7 @@ async function getTotalReward(myweb3) {
     console.log('contract instance', contractInstance);
 
     // let decimals = await contractInstance.methods.decimals().call();
-    let res = await contractInstance.methods.totalDividends().call();
+    let res = await contractInstance.methods.totalDistributed().call();
     // res = res / Math.pow(10, decimals);
     return Promise.resolve(res);
   } catch (error) {

@@ -33,6 +33,10 @@ function App() {
     if (account !== '') {
       setAccount('');
       setMyWeb3(null);
+      web3_modal.clearCachedProvider();
+      setTimeout(() => {
+        window.location.reload();
+      }, 1);
     }
     else {
       detectEthereumNetwork(async () => {
@@ -51,7 +55,7 @@ function App() {
           }
         })
 
-        
+
         await web3_modal.toggleModal();
         // provider.
         // regular web3 provider methods
