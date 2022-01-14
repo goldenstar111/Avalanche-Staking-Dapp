@@ -1,5 +1,5 @@
 import { chainHex, chainId, contactAddress, http } from '../config/site.config'
-import ABI from '../data/sub.token.json'
+import ABI from '../data/new.json'
 import Web3 from 'web3';
 import Web3Modal from 'web3modal';
 import WalletConnectProvider from '@walletconnect/web3-provider';

@@ -37,12 +37,21 @@ function App() {
     else {
       detectEthereumNetwork(async () => {
         const provider = await web3_modal.connect();
+        
+        if (!provider.on) {
+          return;
+        }
+        
+        provider.on('accountsChanged', async () => setTimeout(() => window.location.reload(), 1));
+
         provider.on('chainChanged', async (cid) => {
           if (parseInt(cid) !== chainId) {
             await web3_modal.off();
             return null;
           }
         })
+
+        
         await web3_modal.toggleModal();
         // provider.
         // regular web3 provider methods

@@ -1,4 +1,4 @@
-const contactAddress = "0x12896bF73BC456AaBCAD48D0c5662199deF840f8";
+const contactAddress = "0xd1f6b92510e3614d4d6c1b30b6084fd452cc74d3";
 const http = "https://api.avax.network/ext/bc/C/rpc";
 const chainId = 43114;
 const chainHex = '0xA86A';
