@@ -107,7 +107,7 @@ function App() {
             <div className="item-header">Your Total $USDC Rewards</div>
             <div className="item-body">
               <div className="item-name">$USDC</div>
-              <div className="item-value">{ userReward }</div>
+              <div className="item-value">$ { userReward }</div>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ function App() {
             <div className="item-header">Pending $USDC Rewards</div>
             <div className="item-body">
               <div className="item-name">$USDC</div>
-              <div className="item-value">{ pendingReward }</div>
+              <div className="item-value">$ { pendingReward }</div>
               <div className="d-flex justify-content-center">
                 <button className="my-btn" onClick={() => claim(myWeb3, account)}>Claim Now</button>
               </div>
