@@ -7,7 +7,6 @@ async function getTotalReward(myweb3) {
 
     // let decimals = await contractInstance.methods.decimals().call();
     let res = await contractInstance.methods.totalDistributed().call();
-    // res = res / Math.pow(10, decimals);
     return Promise.resolve(res);
   } catch (error) {
     return Promise.reject(error);
@@ -17,9 +16,9 @@ async function getTotalReward(myweb3) {
 async function getUserReward(myweb3, account) {
   try {
     const contractInstance = getContractInstance(myweb3);
-    let res = await contractInstance.methods.getUnpaidEarnings(account).call();
+    // let res = await contractInstance.methods.getUnpaidEarnings(account).call();
 
-    return Promise.resolve(res);
+    // return Promise.resolve(res);
   } catch (error) {
     return Promise.reject(error);
   }

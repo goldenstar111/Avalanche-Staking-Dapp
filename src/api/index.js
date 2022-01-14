@@ -18,20 +18,9 @@ const providerOptions = {
 }
 
 const web3_modal = new Web3Modal({
-  // network: "testnet", // optional
-  // cacheProvider: true, // optional,
-  // providerOptions
-  cacheProvider: true,
-  providerOptions: {
-    walletconnect: {
-      package: WalletConnectProvider,
-      options: {
-        rpc: {
-          [chainId]: http,
-        },
-      },
-    },
-  },
+  network: "testnet", // optional
+  cacheProvider: true, // optional,
+  providerOptions,
   theme: 'light',
 })
 
